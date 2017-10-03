@@ -11,7 +11,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class DisciplineController extends Controller
 {
     /**
-     * @Route("/")
+     * @Route("/", name="discipline")
      */
     public function indexAction()
     {

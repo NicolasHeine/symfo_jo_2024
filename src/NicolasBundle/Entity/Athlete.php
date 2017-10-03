@@ -3,6 +3,7 @@
 namespace NicolasBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Athlete
@@ -25,6 +26,7 @@ class Athlete
      * @var string
      *
      * @ORM\Column(name="last_name", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $lastName;
 
@@ -32,6 +34,7 @@ class Athlete
      * @var string
      *
      * @ORM\Column(name="first_name", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $firstName;
 
@@ -39,6 +42,7 @@ class Athlete
      * @var \DateTime
      *
      * @ORM\Column(name="birth_date", type="datetime")
+     * @Assert\NotBlank()
      */
     private $birthDate;
 

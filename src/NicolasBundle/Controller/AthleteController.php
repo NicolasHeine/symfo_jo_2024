@@ -11,7 +11,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class AthleteController extends Controller
 {
     /**
-     * @Route("/")
+     * @Route("/", name="athlete")
      */
     public function indexAction()
     {
