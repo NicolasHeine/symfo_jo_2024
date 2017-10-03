@@ -46,6 +46,9 @@ class PaysController extends Controller
             $em->persist($pays);
             $em->flush();
 
+            $pays = new Pays();
+            $form = $this->createForm(PaysType::class, $pays);
+
             $this->addFlash('notice', 'Your request has been successfully sent.');
         }
         // Get all pays
@@ -55,5 +58,25 @@ class PaysController extends Controller
             'list_pays' => $list_pays,
             'form' => $form->createView()
         ));
+    }
+
+    /**
+     * @Route("/edit/{id}", name="edit_pays", requirements={
+     *   "id": "\d+"
+     * })
+     */
+    public function editPaysAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+    }
+
+    /**
+     * @Route("/delete/{id}", name="delete_pays", requirements={
+     *   "id": "\d+"
+     * })
+     */
+    public function deletePaysAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
     }
 }

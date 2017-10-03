@@ -27,7 +27,6 @@ class PaysType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'always_empty' => true,
             'data_class' => 'NicolasBundle\Entity\Pays'
         ));
     }

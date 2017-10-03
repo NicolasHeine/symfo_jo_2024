@@ -26,7 +26,17 @@
                             </tr>
                         </thead>
                         <tbody>
-
+                            {% for pays in list_pays %}
+                                <tr>
+                                    <td>{{ pays.id }}</td>
+                                    <td><img src="{{ asset('uploads/flags/' ~ pays.flagUrl) }}"></td>
+                                    <td>{{ pays.name }}</td>
+                                    <td>
+                                        <a href="{{ path('edit_pays', {'id': pays.id}) }}" class="btn btn-info">Modifier le pays</a>
+                                        <a href="{{ path('delete_pays', {'id': pays.id}) }}" class="btn btn-danger">Supprimer le pays</a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
                         </tbody>
                     </table>
                 {% endif %}
