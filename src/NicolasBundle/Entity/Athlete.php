@@ -41,7 +41,7 @@ class Athlete
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="birth_date", type="datetime")
+     * @ORM\Column(name="birth_date", type="date")
      * @Assert\NotBlank()
      */
     private $birthDate;

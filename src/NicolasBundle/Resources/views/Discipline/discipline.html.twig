@@ -5,6 +5,7 @@
 {% block body %}
     <div class="container">
         <h1 class="text-center">Discipline</h1>
+        <a href="{{ path('homepage_nicolas') }}">Retour à l'accueil</a>
         {% for flashMessage in app.session.flashbag.get('success') %}
             <div class="alert alert-success" role="alert">
                 {{ flashMessage }}
@@ -17,12 +18,14 @@
         {% endfor %}
         <div class="row">
             <div class="col-md-4">
+                <h3>Ajouter une discipline</h3>
                 {{ form_start(form) }}
                 {{ form_rest(form) }}
                 <button type="submit" class="btn btn-primary">Ajouter une discipline</button>
                 {{ form_end(form) }}
             </div>
             <div class="col-md-8">
+                <h3>Toutes les disciplines</h3>
                 {% if list_discipline is empty %}
                     <div class="alert alert-danger">Il n'y a pas de discipline</div>
                 {% else %}

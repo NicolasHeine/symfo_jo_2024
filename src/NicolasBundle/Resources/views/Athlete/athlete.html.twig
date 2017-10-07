@@ -1,7 +1,67 @@
 {% extends 'NicolasBundle::base.html.twig' %}
 
-{% block title %}Tous les athletes{% endblock %}
+{% block title %}Toutes les athlètes{% endblock %}
 
 {% block body %}
-    Hello World!
+    <div class="container">
+        <h1 class="text-center">Athlètes</h1>
+        <a href="{{ path('homepage_nicolas') }}">Retour à l'accueil</a>
+        {% for flashMessage in app.session.flashbag.get('success') %}
+            <div class="alert alert-success" role="alert">
+                {{ flashMessage }}
+            </div>
+        {% endfor %}
+        {% for flashMessage in app.session.flashbag.get('error') %}
+            <div class="alert alert-danger" role="alert">
+                {{ flashMessage }}
+            </div>
+        {% endfor %}
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Ajouter un athlète</h3>
+                {{ form_start(form) }}
+                {{ form_rest(form) }}
+                <button type="submit" class="btn btn-primary">Ajouter un athlète</button>
+                {{ form_end(form) }}
+            </div>
+            <div class="col-md-8">
+                <h3>Tous les athlètes</h3>
+                {% if list_athlete is empty %}
+                    <div class="alert alert-danger">Il n'y a pas d'athlète</div>
+                {% else %}
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Photo de profil</th>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Date de naissance</th>
+                            <th>Discipline</th>
+                            <th>Pays</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for athlete in list_athlete %}
+                            <tr>
+                                <td>{{ athlete.id }}</td>
+                                <td>{{ athlete.picture }}</td>
+                                <td>{{ athlete.lastName }}</td>
+                                <td>{{ athlete.firstName }}</td>
+                                <td>{{ athlete.birthDate }}</td>
+                                <td>{{ athlete.discipline }}</td>
+                                <td>{{ athlete.pays }}</td>
+                                <td>
+                                    <a href="{{ path('edit_athlete', {'id': discipline.id}) }}" class="btn btn-info">Modifier l'athlète</a>
+                                    <a href="{{ path('delete_athlete', {'id': discipline.id}) }}" class="btn btn-danger">Supprimer l'athlète</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
