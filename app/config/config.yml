@@ -9,10 +9,11 @@ imports:
 parameters:
     locale: en
     flags_directory: '%kernel.project_dir%/web/uploads/flags'
+    profil_directory: '%kernel.project_dir%/web/uploads/profil'
 
 framework:
     #esi: ~
-    #translator: { fallbacks: ['%locale%'] }
+    translator: { fallbacks: ['%locale%'] }
     secret: '%secret%'
     router:
         resource: '%kernel.project_dir%/app/config/routing.yml'

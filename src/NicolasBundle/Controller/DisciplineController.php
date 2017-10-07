@@ -33,10 +33,10 @@ class DisciplineController extends Controller
                 $form = $this->createForm(DisciplineType::class, $discipline);
 
                 $session = $this->get('session');
-                $session->getFlashBag()->add('success', 'Discipline ajoutée');
+                $session->getFlashBag()->add('success', $this->get('translator')->trans('success.discipline.add', array(), 'messages'));
             }else{
                 $session = $this->get('session');
-                $session->getFlashBag()->add('error', 'Erreur lors de l\'ajout de la discipline');
+                $session->getFlashBag()->add('error', $this->get('translator')->trans('error.discipline.add', array(), 'messages'));
             }
         }
         // Get all discipline
@@ -68,12 +68,12 @@ class DisciplineController extends Controller
                 $em->flush();
 
                 $session = $this->get('session');
-                $session->getFlashBag()->add('success', 'Discipline modifié');
+                $session->getFlashBag()->add('success', $this->get('translator')->trans('success.discipline.modify', array(), 'messages'));
 
                 return $this->redirectToRoute('discipline');
             }else{
                 $session = $this->get('session');
-                $session->getFlashBag()->add('error', 'Erreur lors de la modification');
+                $session->getFlashBag()->add('error', $this->get('translator')->trans('error.discipline.modify', array(), 'messages'));
             }
         }
 
@@ -93,13 +93,11 @@ class DisciplineController extends Controller
 
         $discipline = $em->getRepository('NicolasBundle:Discipline')->findOneById($id);
 
-        // TODO Supprimer les athlètes liés
-
         $em->remove($discipline);
         $em->flush();
 
         $session = $this->get('session');
-        $session->getFlashBag()->add('success', 'Discipline supprimé');
+        $session->getFlashBag()->add('success', $this->get('translator')->trans('success.discipline.delete', array(), 'messages'));
 
         return $this->redirectToRoute('discipline');
     }

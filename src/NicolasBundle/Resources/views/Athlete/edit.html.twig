@@ -1,10 +1,10 @@
 {% extends 'NicolasBundle::base.html.twig' %}
 
-{% block title %}{{ 'page_title.discipline.edit'|trans }}{% endblock %}
+{% block title %}{{ 'page_title.athlete.edit'|trans }}{% endblock %}
 
 {% block body %}
     <div class="container">
-        <h1 class="text-center">{{ 'modify.discipline'|trans }}</h1>
+        <h1 class="text-center">{{ 'modify.athlete'|trans }}</h1>
         {% for flashMessage in app.session.flashbag.get('success') %}
             <div class="alert alert-success" role="alert">
                 {{ flashMessage }}
@@ -18,7 +18,7 @@
         <div class="form">
             {{ form_start(form) }}
             {{ form_rest(form) }}
-            <button type="submit" class="btn btn-primary">{{ 'modify.discipline'|trans }}</button>
+            <button type="submit" class="btn btn-primary">{{ 'modify.athlete'|trans }}</button>
             {{ form_end(form) }}
         </div>
     </div>

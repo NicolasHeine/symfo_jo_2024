@@ -46,10 +46,10 @@ class PaysController extends Controller
                 $form = $this->createForm(PaysType::class, $pays);
 
                 $session = $this->get('session');
-                $session->getFlashBag()->add('success', 'Pays ajouté');
+                $session->getFlashBag()->add('success', $this->get('translator')->trans('success.pays.add', array(), 'messages'));
             }else{
                 $session = $this->get('session');
-                $session->getFlashBag()->add('error', 'Erreur lors de l\' ajout du pays');
+                $session->getFlashBag()->add('error', $this->get('translator')->trans('error.pays.add', array(), 'messages'));
             }
         }
         // Get all pays
@@ -92,12 +92,12 @@ class PaysController extends Controller
                 $em->flush();
 
                 $session = $this->get('session');
-                $session->getFlashBag()->add('success', 'Pays modifié');
+                $session->getFlashBag()->add('success', $this->get('translator')->trans('success.pays.modify', array(), 'messages'));
 
                 return $this->redirectToRoute('pays');
             }else{
                 $session = $this->get('session');
-                $session->getFlashBag()->add('error', 'Erreur lors de la modification');
+                $session->getFlashBag()->add('error', $this->get('translator')->trans('error.pays.modify', array(), 'messages'));
             }
         }
 
@@ -117,19 +117,12 @@ class PaysController extends Controller
         $fs = new Filesystem();
 
         $pays = $em->getRepository('NicolasBundle:Pays')->findOneById($id);
-        $urlFlag = $this->getParameter('flags_directory').'/'.$pays->getFlagUrl();
-
-        if($fs->exists($urlFlag)){
-            $fs->remove($urlFlag);
-        }
-
-        // TODO Supprimer les athlètes liés
 
         $em->remove($pays);
         $em->flush();
 
         $session = $this->get('session');
-        $session->getFlashBag()->add('success', 'Pays supprimé');
+        $session->getFlashBag()->add('success', $this->get('translator')->trans('success.pays.delete', array(), 'messages'));
 
         return $this->redirectToRoute('pays');
     }

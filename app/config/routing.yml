@@ -1,7 +1,7 @@
 nicolas:
     resource: "@NicolasBundle/Controller/"
     type:     annotation
-    prefix:   /nicolas
+    prefix:   /{_locale}/nicolas
 
 app:
     resource: '@AppBundle/Controller/'

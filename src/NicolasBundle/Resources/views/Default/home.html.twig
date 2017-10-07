@@ -5,10 +5,10 @@
 {% block body %}
     <div class="container">
         <h1 class="text-center">Nicolas Bundle</h1>
-        <ul>
-            <li><a href="{{ path('pays') }}">Voir tous les pays</a></li>
-            <li><a href="{{ path('discipline') }}">Voir toutes les disciplines</a></li>
-            <li><a href="{{ path('athlete') }}">Voir tous les athlètes</a></li>
+        <ul class="list-inline">
+            <li><a href="{{ path('pays') }}" class="btn btn-default">{{ 'menu.pays'|trans }} ></a></li>
+            <li><a href="{{ path('discipline') }}" class="btn btn-default">{{ 'menu.discipline'|trans }} ></a></li>
+            <li><a href="{{ path('athlete') }}" class="btn btn-default">{{ 'menu.athlete'|trans }} ></a></li>
         </ul>
     </div>
 {% endblock %}

@@ -17,8 +17,8 @@ class PaysType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name', TextType::class ,array('label' => 'Nom du pays'))
-            ->add('flagUrl', FileType::class, array('label' => 'Drapeau', 'data_class' => null));
+            ->add('name', TextType::class ,array('label' => 'table.pays.name', 'translation_domain' => 'messages'))
+            ->add('flagUrl', FileType::class, array('label' => 'table.pays.flag', 'data_class' => null, 'translation_domain' => 'messages'));
     }
     
     /**

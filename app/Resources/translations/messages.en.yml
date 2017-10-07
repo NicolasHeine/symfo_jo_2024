@@ -1,0 +1,90 @@
+menu:
+  discipline: See all disciplines
+  pays: See all countries
+  athlete: See all athlete
+
+page_title:
+  discipline:
+    all: All disciplines
+    edit: Modify a discipline
+  pays:
+    all: All countries
+    edit: Modify a country
+  athlete:
+    all: All athletes
+    edit: Modify an athlete
+
+title:
+  discipline: Discipline
+  pays: Country
+  athlete: Athlete
+
+return:
+  home: Return to home
+
+add:
+  discipline: Add a discipline
+  pays: Add a country
+  athlete: Add an athlete
+
+all:
+  discipline: All disciplines
+  pays: All countries
+  athlete: All athletes
+
+none:
+  discipline: There is no discipline
+  pays: There is no country
+  athlete: There is no athlete
+
+table:
+  discipline:
+    name: Discipline
+    action: Action
+  pays:
+    flag: Flag
+    name: Country
+    action: Action
+  athlete:
+    picture: Profil picture
+    last_name: Last name
+    first_name: First name
+    birth_date: Birthday
+    discipline: Discipline
+    pays: Country
+    action: Action
+
+modify:
+  discipline: Modify the discipline
+  pays: Modify the country
+  athlete: Modify the athlete
+
+delete:
+  discipline: Delete the discipline
+  pays: Delete the country
+  athlete: Delete the athlete
+
+success:
+  discipline:
+    add: Discipline added
+    modify: Discipline modified
+    delete: Discipline deleted
+  pays:
+    add: Country added
+    modify: Country modified
+    delete: Country deleted
+  athlete:
+    add: Athlete added
+    modify: Athlete modified
+    delete: Athlete deleted
+
+error:
+  discipline:
+    add: Error when trying to add one discipline
+    modify: Error when trying to modify the discipline
+  pays:
+    add: Error when trying to add one country
+    modify: Error when trying to modify the country
+  athlete:
+    add: Error when trying to add one athlete
+    modify: Error when trying to modify the country

@@ -4,7 +4,7 @@ namespace NicolasBundle\Form;
 
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\BirthdayType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -18,12 +18,12 @@ class AthleteType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('lastName',TextType::class, array('label' => 'Nom'))
-            ->add('firstName',TextType::class, array('label' => 'Prénom'))
-            ->add('birthDate', DateType::class, array('label' => 'Date de naissance'))
-            ->add('picture', FileType::class, array('label' => 'Image de profil'))
-            ->add('discipline', EntityType::class, array('label' => 'Discipline de l\'athlète', 'class' => 'NicolasBundle:Discipline', 'choice_label' => 'name'))
-            ->add('pays', EntityType::class, array('label' => 'Pays de l\'athlete', 'class' => 'NicolasBundle:Pays', 'choice_label' => 'name'));
+            ->add('lastName',TextType::class, array('label' => 'table.athlete.last_name', 'translation_domain' => 'messages'))
+            ->add('firstName',TextType::class, array('label' => 'table.athlete.first_name', 'translation_domain' => 'messages'))
+            ->add('birthDate', BirthdayType::class, array('label' => 'table.athlete.birth_date', 'translation_domain' => 'messages'))
+            ->add('picture', FileType::class, array('label' => 'table.athlete.picture', 'data_class' => null, 'translation_domain' => 'messages'))
+            ->add('discipline', EntityType::class, array('label' => 'table.athlete.discipline', 'class' => 'NicolasBundle:Discipline', 'choice_label' => 'name', 'translation_domain' => 'messages'))
+            ->add('pays', EntityType::class, array('label' => 'table.athlete.pays', 'class' => 'NicolasBundle:Pays', 'choice_label' => 'name', 'translation_domain' => 'messages'));
     }
     
     /**

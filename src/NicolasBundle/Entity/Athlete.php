@@ -10,9 +10,12 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @ORM\Table(name="athlete")
  * @ORM\Entity(repositoryClass="NicolasBundle\Repository\AthleteRepository")
+ * @ORM\HasLifecycleCallbacks()
  */
 class Athlete
 {
+    const UPLOAD_DIR = __DIR__ . '/../../../web/uploads/profil';
+
     /**
      * @var int
      *
@@ -205,6 +208,20 @@ class Athlete
     public function setPays($pays)
     {
         $this->pays = $pays;
+    }
+
+    public function getUploadDir(){
+        return self::UPLOAD_DIR;
+    }
+
+    /**
+     * @ORM\PostRemove
+     */
+    public function deleteImage(){
+        if(file_exists(self::UPLOAD_DIR.'/'.$this->picture)){
+            unlink(self::UPLOAD_DIR.'/'.$this->picture);
+        }
+        return true;
     }
 }
 

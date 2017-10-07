@@ -1,11 +1,11 @@
 {% extends 'NicolasBundle::base.html.twig' %}
 
-{% block title %}Tous les pays{% endblock %}
+{% block title %}{{ 'page_title.pays.all'|trans }}{% endblock %}
 
 {% block body %}
     <div class="container">
-        <h1 class="text-center">Pays</h1>
-        <a href="{{ path('homepage_nicolas') }}">Retour à l'accueil</a>
+        <h1 class="text-center">{{ 'title.pays'|trans }}</h1>
+        <a href="{{ path('homepage_nicolas') }}" class="btn btn-default">< {{ 'return.home'|trans }}</a>
         {% for flashMessage in app.session.flashbag.get('success') %}
             <div class="alert alert-success" role="alert">
                 {{ flashMessage }}
@@ -18,24 +18,24 @@
         {% endfor %}
         <div class="row">
             <div class="col-md-4">
-                <h3>Ajouter un pays</h3>
+                <h3>{{ 'add.pays'|trans }}</h3>
                 {{ form_start(form) }}
                     {{ form_rest(form) }}
-                    <button type="submit" class="btn btn-primary">Ajouter un pays</button>
+                    <button type="submit" class="btn btn-primary">{{ 'add.pays'|trans }}</button>
                 {{ form_end(form) }}
             </div>
             <div class="col-md-8">
-                <h3>Tous les pays</h3>
+                <h3>{{ 'all.pays'|trans }}</h3>
                 {% if list_pays is empty %}
-                    <div class="alert alert-danger">Il n'y a pas de pays</div>
+                    <div class="alert alert-danger">{{ 'none.pays'|trans }}</div>
                 {% else %}
                     <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Drapeau</th>
-                                <th>Pays</th>
-                                <th>Action</th>
+                                <th>{{ 'table.pays.flag'|trans }}</th>
+                                <th>{{ 'table.pays.name'|trans }}</th>
+                                <th>{{ 'table.pays.action'|trans }}</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -45,8 +45,8 @@
                                     <td><img src="{{ asset('uploads/flags/' ~ pays.flagUrl) }}"></td>
                                     <td>{{ pays.name }}</td>
                                     <td>
-                                        <a href="{{ path('edit_pays', {'id': pays.id}) }}" class="btn btn-info">Modifier le pays</a>
-                                        <a href="{{ path('delete_pays', {'id': pays.id}) }}" class="btn btn-danger">Supprimer le pays</a>
+                                        <a href="{{ path('edit_pays', {'id': pays.id}) }}" class="btn btn-info">{{ 'modify.pays'|trans }}</a>
+                                        <a href="{{ path('delete_pays', {'id': pays.id}) }}" class="btn btn-danger">{{ 'delete.pays'|trans }}</a>
                                     </td>
                                 </tr>
                             {% endfor %}

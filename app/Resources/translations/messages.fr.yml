@@ -1,0 +1,90 @@
+menu:
+  discipline: Voir toutes les disciplines
+  pays: Voir tous les pays
+  athlete: Voir tous les athletes
+
+page_title:
+  discipline:
+    all: Toutes les disciplines
+    edit: Modification d'une discipline
+  pays:
+    all: Tous les pays
+    edit: Modification d'un pays
+  athlete:
+    all: Tous les athlètes
+    edit: Modification d'un athlète
+
+title:
+  discipline: Discipline
+  pays: Pays
+  athlete: Athlete
+
+return:
+  home: Retourner à l'accueil
+
+add:
+  discipline: Ajouter une discipline
+  pays: Ajouter un pays
+  athlete: Ajouter un athlète
+
+all:
+  discipline: Toutes les disciplines
+  pays: Tous les pays
+  athlete: Tous les athlètes
+
+none:
+  discipline: Il n'y a pas de discipline
+  pays: Il n'y a pas de pays
+  athlete: Il n'y a pas d'athlète
+
+table:
+  discipline:
+    name: Discipline
+    action: Action
+  pays:
+    flag: Drapeau
+    name: Pays
+    action: Action
+  athlete:
+    picture: Photo de profil
+    last_name: Nom
+    first_name: Prénom
+    birth_date: Date de naissance
+    discipline: Discipline
+    pays: Pays
+    action: Action
+
+modify:
+  discipline: Modifier la discipline
+  pays: Modifier le pays
+  athlete: Modifier l'athlète
+
+delete:
+  discipline: Supprimer la discipline
+  pays: Supprimer le pays
+  athlete: Supprimer l'athlète
+
+success:
+  discipline:
+    add: Discipline ajoutée
+    modify: Discipline modifiée
+    delete: Discipline supprimée
+  pays:
+    add: Pays ajouté
+    modify: Pays modifié
+    delete: Pays supprimé
+  athlete:
+    add: Athlète ajouté
+    modify: Athlète modifié
+    delete: Athlète supprimé
+
+error:
+  discipline:
+    add: Erreur lors de l'ajout de la discipline
+    modify: Erreur lors de la modification de la discipline
+  pays:
+    add: Erreur lors de l'ajout du pays
+    modify: Erreur lors de la modification du pays
+  athlete:
+    add: Erreur lors de l'ajout de l'athlète
+    modify: Erreur lors de la modification de l'athlète

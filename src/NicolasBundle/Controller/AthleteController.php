@@ -6,6 +6,7 @@ use NicolasBundle\Entity\Athlete;
 use NicolasBundle\Form\AthleteType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -26,6 +27,17 @@ class AthleteController extends Controller
         $form->handleRequest($request);
         if ($form->isSubmitted()){
             if($form->isValid()) {
+                $file = $athlete->getPicture();
+
+                $fileName = md5(uniqid()) . '.' . $file->guessExtension();
+
+                $file->move(
+                    $this->getParameter('profil_directory'),
+                    $fileName
+                );
+
+                $athlete->setPicture($fileName);
+
                 $em->persist($athlete);
                 $em->flush();
 
@@ -33,10 +45,10 @@ class AthleteController extends Controller
                 $form = $this->createForm(AthleteType::class, $athlete);
 
                 $session = $this->get('session');
-                $session->getFlashBag()->add('success', 'Athlète ajouté');
+                $session->getFlashBag()->add('success', $this->get('translator')->trans('success.athlete.add', array(), 'messages'));
             }else{
                 $session = $this->get('session');
-                $session->getFlashBag()->add('error', 'Erreur lors de l\'ajout de l\'athlète');
+                $session->getFlashBag()->add('error', $this->get('translator')->trans('error.athlete.add', array(), 'messages'));
             }
         }
         // Get all discipline
@@ -55,7 +67,42 @@ class AthleteController extends Controller
      */
     public function editAthleteAction(Request $request, $id)
     {
+        $em = $this->getDoctrine()->getManager();
 
+        $athlete = $em->getRepository('NicolasBundle:Athlete')->findOneById($id);
+
+        $form = $this->createForm(AthleteType::class, $athlete);
+
+        $form->handleRequest($request);
+        if ($form->isSubmitted()){
+            if($form->isValid()) {
+                $file = $athlete->getPicture();
+
+                $fileName = md5(uniqid()) . '.' . $file->guessExtension();
+
+                $file->move(
+                    $this->getParameter('profil_directory'),
+                    $fileName
+                );
+
+                $athlete->setPicture($fileName);
+
+                $em->persist($athlete);
+                $em->flush();
+
+                $session = $this->get('session');
+                $session->getFlashBag()->add('success', $this->get('translator')->trans('success.athlete.modify', array(), 'messages'));
+
+                return $this->redirectToRoute('athlete');
+            }else{
+                $session = $this->get('session');
+                $session->getFlashBag()->add('error', $this->get('translator')->trans('error.athlete.modify', array(), 'messages'));
+            }
+        }
+
+        return $this->render('NicolasBundle:Athlete:edit.html.twig', array(
+            'form' => $form->createView()
+        ));
     }
 
     /**
@@ -65,6 +112,17 @@ class AthleteController extends Controller
      */
     public function deleteAthleteAction($id)
     {
+        $em = $this->getDoctrine()->getManager();
+        $fs = new Filesystem();
 
+        $athlete = $em->getRepository('NicolasBundle:Athlete')->findOneById($id);
+
+        $em->remove($athlete);
+        $em->flush();
+
+        $session = $this->get('session');
+        $session->getFlashBag()->add('success', $this->get('translator')->trans('success.athlete.delete', array(), 'messages'));
+
+        return $this->redirectToRoute('athlete');
     }
 }

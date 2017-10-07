@@ -15,7 +15,7 @@ class DisciplineType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name', TextType::class, array('label' => 'Nom de la discipline'));
+            ->add('name', TextType::class, array('label' => 'table.discipline.name', 'translation_domain' => 'messages'));
     }
     
     /**

@@ -1,11 +1,11 @@
 {% extends 'NicolasBundle::base.html.twig' %}
 
-{% block title %}Toutes les athlètes{% endblock %}
+{% block title %}{{ 'page_title.athlete.all'|trans }}{% endblock %}
 
 {% block body %}
     <div class="container">
-        <h1 class="text-center">Athlètes</h1>
-        <a href="{{ path('homepage_nicolas') }}">Retour à l'accueil</a>
+        <h1 class="text-center">{{ 'title.athlete'|trans }}</h1>
+        <a href="{{ path('homepage_nicolas') }}" class="btn btn-default">< {{ 'return.home'|trans }}</a>
         {% for flashMessage in app.session.flashbag.get('success') %}
             <div class="alert alert-success" role="alert">
                 {{ flashMessage }}
@@ -18,43 +18,43 @@
         {% endfor %}
         <div class="row">
             <div class="col-md-4">
-                <h3>Ajouter un athlète</h3>
+                <h3>{{ 'add.athlete'|trans }}</h3>
                 {{ form_start(form) }}
                 {{ form_rest(form) }}
-                <button type="submit" class="btn btn-primary">Ajouter un athlète</button>
+                <button type="submit" class="btn btn-primary">{{ 'add.athlete'|trans }}</button>
                 {{ form_end(form) }}
             </div>
             <div class="col-md-8">
-                <h3>Tous les athlètes</h3>
+                <h3>{{ 'all.athlete'|trans }}</h3>
                 {% if list_athlete is empty %}
-                    <div class="alert alert-danger">Il n'y a pas d'athlète</div>
+                    <div class="alert alert-danger">{{ 'none.athlete'|trans }}</div>
                 {% else %}
                     <table class="table table-striped">
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>Photo de profil</th>
-                            <th>Nom</th>
-                            <th>Prénom</th>
-                            <th>Date de naissance</th>
-                            <th>Discipline</th>
-                            <th>Pays</th>
-                            <th>Action</th>
+                            <th>{{ 'table.athlete.picture'|trans }}</th>
+                            <th>{{ 'table.athlete.last_name'|trans }}</th>
+                            <th>{{ 'table.athlete.first_name'|trans }}</th>
+                            <th>{{ 'table.athlete.birth_date'|trans }}</th>
+                            <th>{{ 'table.athlete.discipline'|trans }}</th>
+                            <th>{{ 'table.athlete.pays'|trans }}</th>
+                            <th>{{ 'table.athlete.action'|trans }}</th>
                         </tr>
                         </thead>
                         <tbody>
                         {% for athlete in list_athlete %}
                             <tr>
                                 <td>{{ athlete.id }}</td>
-                                <td>{{ athlete.picture }}</td>
+                                <td><img src="{{ asset('uploads/profil/' ~ athlete.picture) }}" width=80></td>
                                 <td>{{ athlete.lastName }}</td>
                                 <td>{{ athlete.firstName }}</td>
-                                <td>{{ athlete.birthDate }}</td>
-                                <td>{{ athlete.discipline }}</td>
-                                <td>{{ athlete.pays }}</td>
+                                <td>{{ athlete.birthDate|date('Y-m-d') }}</td>
+                                <td>{{ athlete.discipline.name }}</td>
+                                <td>{{ athlete.pays.name }}</td>
                                 <td>
-                                    <a href="{{ path('edit_athlete', {'id': discipline.id}) }}" class="btn btn-info">Modifier l'athlète</a>
-                                    <a href="{{ path('delete_athlete', {'id': discipline.id}) }}" class="btn btn-danger">Supprimer l'athlète</a>
+                                    <a href="{{ path('edit_athlete', {'id': athlete.id}) }}" class="btn btn-info">{{ 'modify.athlete'|trans }}</a>
+                                    <a href="{{ path('delete_athlete', {'id': athlete.id}) }}" class="btn btn-danger">{{ 'delete.athlete'|trans }}</a>
                                 </td>
                             </tr>
                         {% endfor %}

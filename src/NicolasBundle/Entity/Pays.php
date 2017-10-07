@@ -11,9 +11,12 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @ORM\Table(name="pays")
  * @ORM\Entity(repositoryClass="NicolasBundle\Repository\PaysRepository")
+ * @ORM\HasLifecycleCallbacks()
  */
 class Pays
 {
+    const UPLOAD_DIR = __DIR__ . '/../../../web/uploads/flags';
+
     /**
      * @var int
      *
@@ -120,5 +123,14 @@ class Pays
         $this->athletes = $athletes;
     }
 
+    /**
+     * @ORM\PostRemove
+     */
+    public function deleteImage(){
+        if(file_exists(self::UPLOAD_DIR.'/'.$this->flagUrl)){
+            unlink(self::UPLOAD_DIR.'/'.$this->flagUrl);
+        }
+        return true;
+    }
 }
 

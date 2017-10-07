@@ -2,13 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16292ece-91e2-482c-9ccb-ae5b8ae1ad29" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/flags/1f3a5bae73ab2654be22d88c8c5e12d7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/flags/2e23e7f27d5d767f62bf7452f9508f1e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/flags/8ccdb9ebe27965da3f23f664843339ab.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Controller/AthleteController.php" afterPath="$PROJECT_DIR$/src/NicolasBundle/Controller/AthleteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Controller/DisciplineController.php" afterPath="$PROJECT_DIR$/src/NicolasBundle/Controller/DisciplineController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Controller/PaysController.php" afterPath="$PROJECT_DIR$/src/NicolasBundle/Controller/PaysController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Entity/Athlete.php" afterPath="$PROJECT_DIR$/src/NicolasBundle/Entity/Athlete.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Entity/Pays.php" afterPath="$PROJECT_DIR$/src/NicolasBundle/Entity/Pays.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Form/AthleteType.php" afterPath="$PROJECT_DIR$/src/NicolasBundle/Form/AthleteType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Form/DisciplineType.php" afterPath="$PROJECT_DIR$/src/NicolasBundle/Form/DisciplineType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Form/PaysType.php" afterPath="$PROJECT_DIR$/src/NicolasBundle/Form/PaysType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Athlete/athlete.html.twig" afterPath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Athlete/athlete.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Default/home.html.twig" afterPath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Default/home.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/discipline.html.twig" afterPath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/discipline.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/edit.html.twig" afterPath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/edit.html.twig" afterPath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/edit.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/pays.html.twig" afterPath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/pays.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,67 +32,37 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PaysController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Controller/PaysController.php">
+    <leaf>
+      <file leaf-file-name="messages.fr.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.fr.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="91" column="29" lean-forward="false" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
-              <folding>
-                <element signature="e#44#74#0#PHP" expanded="true" />
-                <element signature="e#1655#1675#1#PHP" expanded="true" />
-                <element signature="e#2121#2141#1#PHP" expanded="true" />
-                <element signature="e#3100#3135#0#PHP" expanded="true" />
-                <element signature="e#3483#3503#1#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AthleteController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Controller/AthleteController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-              <folding>
-                <element signature="e#44#77#0#PHP" expanded="true" />
-                <element signature="e#1363#1404#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="athlete.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Athlete/athlete.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="7" selection-end-column="71" />
+            <state relative-caret-position="130">
+              <caret line="45" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="discipline.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/discipline.html.twig">
+      <file leaf-file-name="messages.en.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.en.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="71" lean-forward="false" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pays.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/pays.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="71" lean-forward="false" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
+            <state relative-caret-position="793">
+              <caret line="89" column="51" lean-forward="false" selection-start-line="89" selection-start-column="51" selection-end-line="89" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>flags_directory</find>
+      <find>transla</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\wamp64\www\symfo_jo_2024</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -90,22 +72,31 @@
       <list>
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/form/fields.html.twig" />
-        <option value="$PROJECT_DIR$/src/NicolasBundle/Entity/Pays.php" />
-        <option value="$PROJECT_DIR$/src/NicolasBundle/Form/PaysType.php" />
-        <option value="$PROJECT_DIR$/src/NicolasBundle/Controller/PaysController.php" />
-        <option value="$PROJECT_DIR$/src/NicolasBundle/Controller/DisciplineController.php" />
-        <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/home.html.twig" />
         <option value="$PROJECT_DIR$/src/NicolasBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/NicolasBundle/Controller/AthleteController.php" />
-        <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Default/home.html.twig" />
-        <option value="$PROJECT_DIR$/src/NicolasBundle/Form/DisciplineType.php" />
         <option value="$PROJECT_DIR$/src/NicolasBundle/Entity/Athlete.php" />
-        <option value="$PROJECT_DIR$/src/NicolasBundle/Form/AthleteType.php" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Entity/Pays.php" />
+        <option value="$PROJECT_DIR$/app/Resources/translation/messages.fr.yml" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/translation/messages.fr.yml" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/translation/messages.en.yml" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/translations/messages.fr.yml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Default/home.html.twig" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Athlete/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Athlete/athlete.html.twig" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Form/AthleteType.php" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Controller/AthleteController.php" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Form/DisciplineType.php" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Controller/DisciplineController.php" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/discipline.html.twig" />
         <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/pays.html.twig" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Form/PaysType.php" />
+        <option value="$PROJECT_DIR$/app/Resources/translations/messages.fr.yml" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Controller/PaysController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/translations/messages.en.yml" />
       </list>
     </option>
   </component>
@@ -177,6 +168,12 @@
               <item name="symfo_jo_2024" type="b2602c69:ProjectViewProjectNode" />
               <item name="symfo_jo_2024" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfo_jo_2024" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfo_jo_2024" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -184,15 +181,7 @@
               <item name="symfo_jo_2024" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="symfo_jo_2024" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfo_jo_2024" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="form" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="translations" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="symfo_jo_2024" type="b2602c69:ProjectViewProjectNode" />
@@ -252,7 +241,7 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="NicolasBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="symfo_jo_2024" type="b2602c69:ProjectViewProjectNode" />
@@ -261,16 +250,6 @@
               <item name="NicolasBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Athlete" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="symfo_jo_2024" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfo_jo_2024" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="NicolasBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Default" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="symfo_jo_2024" type="b2602c69:ProjectViewProjectNode" />
@@ -306,19 +285,6 @@
               <item name="symfo_jo_2024" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="symfo_jo_2024" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfo_jo_2024" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="uploads" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="symfo_jo_2024" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfo_jo_2024" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="uploads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="flags" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -332,6 +298,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\symfo_jo_2024\app\Resources" />
+      <recent name="C:\wamp64\www\symfo_jo_2024\src\NicolasBundle\Resources" />
       <recent name="C:\wamp64\www\symfo_jo_2024\src\NicolasBundle\Resources\views\Default" />
     </key>
   </component>
@@ -363,12 +331,12 @@
       <workItem from="1507039498023" duration="451000" />
       <workItem from="1507039962612" duration="286000" />
       <workItem from="1507040498637" duration="86000" />
-      <workItem from="1507386215303" duration="6736000" />
+      <workItem from="1507386215303" duration="13986000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7832000" />
+    <option name="totallyTimeSpent" value="15082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -376,8 +344,9 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16822916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -389,7 +358,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -409,11 +377,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#44#74#0#PHP" expanded="true" />
-            <element signature="e#1655#1675#1#PHP" expanded="true" />
-            <element signature="e#2121#2141#1#PHP" expanded="true" />
-            <element signature="e#3100#3135#0#PHP" expanded="true" />
-            <element signature="e#3483#3503#1#PHP" expanded="true" />
+            <element signature="e#44#74#0#PHP" expanded="false" />
+            <element signature="e#1750#1770#1#PHP" expanded="false" />
+            <element signature="e#2216#2236#1#PHP" expanded="false" />
+            <element signature="e#3297#3332#0#PHP" expanded="false" />
+            <element signature="e#3680#3700#1#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -423,11 +391,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#44#74#0#PHP" expanded="true" />
-            <element signature="e#1655#1675#1#PHP" expanded="true" />
-            <element signature="e#2121#2141#1#PHP" expanded="true" />
-            <element signature="e#3100#3135#0#PHP" expanded="true" />
-            <element signature="e#3483#3503#1#PHP" expanded="true" />
+            <element signature="e#44#74#0#PHP" expanded="false" />
+            <element signature="e#1750#1770#1#PHP" expanded="false" />
+            <element signature="e#2216#2236#1#PHP" expanded="false" />
+            <element signature="e#3297#3332#0#PHP" expanded="false" />
+            <element signature="e#3680#3700#1#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -437,11 +405,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#44#74#0#PHP" expanded="true" />
-            <element signature="e#1655#1675#1#PHP" expanded="true" />
-            <element signature="e#2121#2141#1#PHP" expanded="true" />
-            <element signature="e#3100#3135#0#PHP" expanded="true" />
-            <element signature="e#3483#3503#1#PHP" expanded="true" />
+            <element signature="e#44#74#0#PHP" expanded="false" />
+            <element signature="e#1750#1770#1#PHP" expanded="false" />
+            <element signature="e#2216#2236#1#PHP" expanded="false" />
+            <element signature="e#3297#3332#0#PHP" expanded="false" />
+            <element signature="e#3680#3700#1#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -451,11 +419,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#44#74#0#PHP" expanded="true" />
-            <element signature="e#1655#1675#1#PHP" expanded="true" />
-            <element signature="e#2121#2141#1#PHP" expanded="true" />
-            <element signature="e#3100#3135#0#PHP" expanded="true" />
-            <element signature="e#3483#3503#1#PHP" expanded="true" />
+            <element signature="e#44#74#0#PHP" expanded="false" />
+            <element signature="e#1750#1770#1#PHP" expanded="false" />
+            <element signature="e#2216#2236#1#PHP" expanded="false" />
+            <element signature="e#3297#3332#0#PHP" expanded="false" />
+            <element signature="e#3680#3700#1#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -465,11 +433,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#44#74#0#PHP" expanded="true" />
-            <element signature="e#1655#1675#1#PHP" expanded="true" />
-            <element signature="e#2121#2141#1#PHP" expanded="true" />
-            <element signature="e#3100#3135#0#PHP" expanded="true" />
-            <element signature="e#3483#3503#1#PHP" expanded="true" />
+            <element signature="e#44#74#0#PHP" expanded="false" />
+            <element signature="e#1750#1770#1#PHP" expanded="false" />
+            <element signature="e#2216#2236#1#PHP" expanded="false" />
+            <element signature="e#3297#3332#0#PHP" expanded="false" />
+            <element signature="e#3680#3700#1#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -479,11 +447,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#44#74#0#PHP" expanded="true" />
-            <element signature="e#1655#1675#1#PHP" expanded="true" />
-            <element signature="e#2121#2141#1#PHP" expanded="true" />
-            <element signature="e#3100#3135#0#PHP" expanded="true" />
-            <element signature="e#3483#3503#1#PHP" expanded="true" />
+            <element signature="e#44#74#0#PHP" expanded="false" />
+            <element signature="e#1750#1770#1#PHP" expanded="false" />
+            <element signature="e#2216#2236#1#PHP" expanded="false" />
+            <element signature="e#3297#3332#0#PHP" expanded="false" />
+            <element signature="e#3680#3700#1#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -514,94 +482,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="80" lean-forward="false" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="e#40#99#0#PHP" expanded="true" />
+            <element signature="e#40#99#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Controller/DisciplineController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="84" column="4" lean-forward="false" selection-start-line="84" selection-start-column="4" selection-end-line="90" selection-end-column="5" />
-          <folding>
-            <element signature="e#44#80#0#PHP" expanded="true" />
-            <element signature="e#1348#1374#1#PHP" expanded="true" />
-            <element signature="e#1418#1465#0#PHP" expanded="true" />
-            <element signature="e#1862#1888#1#PHP" expanded="true" />
-            <element signature="e#2569#2610#0#PHP" expanded="true" />
-            <element signature="e#2944#2970#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Controller/PaysController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="91" column="29" lean-forward="false" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
-          <folding>
-            <element signature="e#44#74#0#PHP" expanded="true" />
-            <element signature="e#1655#1675#1#PHP" expanded="true" />
-            <element signature="e#2121#2141#1#PHP" expanded="true" />
-            <element signature="e#3100#3135#0#PHP" expanded="true" />
-            <element signature="e#3483#3503#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Default/home.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Form/DisciplineType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="e#38#78#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Form/PaysType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#38#78#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Entity/Athlete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="43" column="48" lean-forward="false" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -613,65 +500,196 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="41" />
+          <folding>
+            <element signature="e#337#375#1#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Entity/Athlete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="215" column="0" lean-forward="false" selection-start-line="215" selection-start-column="0" selection-end-line="224" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Entity/Pays.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="36" column="62" lean-forward="false" selection-start-line="36" selection-start-column="62" selection-end-line="37" selection-end-column="25" />
+        <state relative-caret-position="674">
+          <caret line="123" column="5" lean-forward="false" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/translation/messages.fr.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/translation/messages.en.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Default/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="88" lean-forward="false" selection-start-line="10" selection-start-column="88" selection-end-line="10" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Athlete/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Athlete/athlete.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Form/AthleteType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="25" column="140" lean-forward="false" selection-start-line="25" selection-start-column="140" selection-end-line="25" selection-end-column="140" />
+        <state relative-caret-position="411">
+          <caret line="25" column="81" lean-forward="false" selection-start-line="25" selection-start-column="81" selection-end-line="25" selection-end-column="81" />
           <folding>
             <element signature="e#38#87#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Form/DisciplineType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="82" lean-forward="false" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Controller/AthleteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="207">
+          <caret line="93" column="134" lean-forward="false" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="134" />
           <folding>
             <element signature="e#44#77#0#PHP" expanded="true" />
-            <element signature="e#1363#1404#0#PHP" expanded="true" />
+            <element signature="e#1749#1772#1#PHP" expanded="true" />
+            <element signature="e#1816#1857#0#PHP" expanded="true" />
+            <element signature="e#2239#2262#1#PHP" expanded="true" />
+            <element signature="e#3348#3386#0#PHP" expanded="true" />
+            <element signature="e#3743#3766#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Controller/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="e#337#375#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Athlete/athlete.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="7" selection-end-column="71" />
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/discipline.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="71" lean-forward="false" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
+        <state relative-caret-position="459">
+          <caret line="27" column="38" lean-forward="false" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/pays.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="71" lean-forward="false" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
+        <state relative-caret-position="629">
+          <caret line="37" column="57" lean-forward="false" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Form/PaysType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Controller/DisciplineController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="70" column="137" lean-forward="true" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="137" />
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
+            <element signature="e#1440#1466#1#PHP" expanded="true" />
+            <element signature="e#1510#1557#0#PHP" expanded="true" />
+            <element signature="e#1954#1980#1#PHP" expanded="true" />
+            <element signature="e#2769#2810#0#PHP" expanded="true" />
+            <element signature="e#3144#3170#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Controller/PaysController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2006">
+          <caret line="124" column="100" lean-forward="false" selection-start-line="124" selection-start-column="100" selection-end-line="124" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.fr.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="45" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.en.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="793">
+          <caret line="89" column="51" lean-forward="false" selection-start-line="89" selection-start-column="51" selection-end-line="89" selection-end-column="51" />
           <folding />
         </state>
       </provider>
