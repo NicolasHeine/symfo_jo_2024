@@ -1,0 +1,13 @@
+{% extends 'NicolasBundle::base.html.twig' %}
+
+{% block title %}Nicolas Bundle{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="text-center">Nicolas Bundle</h1>
+        <ul>
+            <li><a href="{{ path('pays') }}">Voir tous les pays</a></li>
+            <li><a href="{{ path('discipline') }}">Voir toutes les disciplines</a></li>
+        </ul>
+    </div>
+{% endblock %}

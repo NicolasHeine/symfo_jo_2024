@@ -1,10 +1,10 @@
 {% extends 'NicolasBundle::base.html.twig' %}
 
-{% block title %}Modification du pays{% endblock %}
+{% block title %}Modification d'une discipline{% endblock %}
 
 {% block body %}
     <div class="container">
-        <h1 class="text-center">Modifier le pays</h1>
+        <h1 class="text-center">Modifier la discipline</h1>
         {% for flashMessage in app.session.flashbag.get('success') %}
             <div class="alert alert-success" role="alert">
                 {{ flashMessage }}
@@ -18,7 +18,7 @@
         <div class="form">
             {{ form_start(form) }}
             {{ form_rest(form) }}
-            <button type="submit" class="btn btn-primary">Modifier le pays</button>
+            <button type="submit" class="btn btn-primary">Modifier la discipline</button>
             {{ form_end(form) }}
         </div>
     </div>

@@ -49,7 +49,7 @@ class PaysController extends Controller
                 $session->getFlashBag()->add('success', 'Pays ajouté');
             }else{
                 $session = $this->get('session');
-                $session->getFlashBag()->add('error', 'Pays ajouté');
+                $session->getFlashBag()->add('error', 'Erreur lors de l\' ajout du pays');
             }
         }
         // Get all pays
@@ -91,12 +91,9 @@ class PaysController extends Controller
                 $em->persist($pays);
                 $em->flush();
 
-                $pays = new Pays();
-                $form = $this->createForm(PaysType::class, $pays);
-
                 $session = $this->get('session');
                 $session->getFlashBag()->add('success', 'Pays modifié');
-                
+
                 return $this->redirectToRoute('pays');
             }else{
                 $session = $this->get('session');
@@ -132,7 +129,7 @@ class PaysController extends Controller
         $em->flush();
 
         $session = $this->get('session');
-        $session->getFlashBag()->add('success', 'Problème lors de l\'ajout');
+        $session->getFlashBag()->add('success', 'Pays supprimé');
 
         return $this->redirectToRoute('pays');
     }

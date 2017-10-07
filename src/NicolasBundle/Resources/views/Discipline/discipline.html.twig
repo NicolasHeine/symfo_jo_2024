@@ -3,5 +3,52 @@
 {% block title %}Toutes les disciplines{% endblock %}
 
 {% block body %}
-    Hello World!
+    <div class="container">
+        <h1 class="text-center">Discipline</h1>
+        {% for flashMessage in app.session.flashbag.get('success') %}
+            <div class="alert alert-success" role="alert">
+                {{ flashMessage }}
+            </div>
+        {% endfor %}
+        {% for flashMessage in app.session.flashbag.get('error') %}
+            <div class="alert alert-danger" role="alert">
+                {{ flashMessage }}
+            </div>
+        {% endfor %}
+        <div class="row">
+            <div class="col-md-4">
+                {{ form_start(form) }}
+                {{ form_rest(form) }}
+                <button type="submit" class="btn btn-primary">Ajouter une discipline</button>
+                {{ form_end(form) }}
+            </div>
+            <div class="col-md-8">
+                {% if list_discipline is empty %}
+                    <div class="alert alert-danger">Il n'y a pas de discipline</div>
+                {% else %}
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Discipline</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for discipline in list_discipline %}
+                            <tr>
+                                <td>{{ discipline.id }}</td>
+                                <td>{{ discipline.name }}</td>
+                                <td>
+                                    <a href="{{ path('edit_discipline', {'id': discipline.id}) }}" class="btn btn-info">Modifier la discipline</a>
+                                    <a href="{{ path('delete_discipline', {'id': discipline.id}) }}" class="btn btn-danger">Supprimer la discipline</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
