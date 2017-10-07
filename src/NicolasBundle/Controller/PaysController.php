@@ -6,8 +6,9 @@ use NicolasBundle\Entity\Pays;
 use NicolasBundle\Form\PaysType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * @Route("/pays")
@@ -25,31 +26,31 @@ class PaysController extends Controller
         $form = $this->createForm(PaysType::class, $pays);
 
         $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid()) {
-            // $file stores the uploaded file
-            $file = $pays->getFlagUrl();
+        if ($form->isSubmitted()){
+            if($form->isValid()) {
+                $file = $pays->getFlagUrl();
 
-            // Generate a unique name for the file before saving it
-            $fileName = md5(uniqid()).'.'.$file->guessExtension();
+                $fileName = md5(uniqid()) . '.' . $file->guessExtension();
 
-            // Move the file to the directory where flags are stored
-            $file->move(
-                $this->getParameter('flags_directory'),
-                $fileName
-            );
+                $file->move(
+                    $this->getParameter('flags_directory'),
+                    $fileName
+                );
 
-            // Update the 'flag' property to store the file name
-            // instead of its contents
-            $pays->setFlagUrl($fileName);
+                $pays->setFlagUrl($fileName);
 
-            // ... persist the $pays variable or any other work
-            $em->persist($pays);
-            $em->flush();
+                $em->persist($pays);
+                $em->flush();
 
-            $pays = new Pays();
-            $form = $this->createForm(PaysType::class, $pays);
+                $pays = new Pays();
+                $form = $this->createForm(PaysType::class, $pays);
 
-            $this->addFlash('notice', 'Your request has been successfully sent.');
+                $session = $this->get('session');
+                $session->getFlashBag()->add('success', 'Pays ajouté');
+            }else{
+                $session = $this->get('session');
+                $session->getFlashBag()->add('error', 'Pays ajouté');
+            }
         }
         // Get all pays
         $list_pays = $em->getRepository('NicolasBundle:Pays')->findAll();
@@ -65,9 +66,47 @@ class PaysController extends Controller
      *   "id": "\d+"
      * })
      */
-    public function editPaysAction($id)
+    public function editPaysAction(Request $request, $id)
     {
         $em = $this->getDoctrine()->getManager();
+
+        $pays = $em->getRepository('NicolasBundle:Pays')->findOneById($id);
+
+        $form = $this->createForm(PaysType::class, $pays);
+
+        $form->handleRequest($request);
+        if ($form->isSubmitted()){
+            if($form->isValid()) {
+                $file = $pays->getFlagUrl();
+
+                $fileName = md5(uniqid()) . '.' . $file->guessExtension();
+
+                $file->move(
+                    $this->getParameter('flags_directory'),
+                    $fileName
+                );
+
+                $pays->setFlagUrl($fileName);
+
+                $em->persist($pays);
+                $em->flush();
+
+                $pays = new Pays();
+                $form = $this->createForm(PaysType::class, $pays);
+
+                $session = $this->get('session');
+                $session->getFlashBag()->add('success', 'Pays modifié');
+                
+                return $this->redirectToRoute('pays');
+            }else{
+                $session = $this->get('session');
+                $session->getFlashBag()->add('error', 'Erreur lors de la modification');
+            }
+        }
+
+        return $this->render('NicolasBundle:Pays:edit.html.twig', array(
+            'form' => $form->createView()
+        ));
     }
 
     /**
@@ -78,5 +117,23 @@ class PaysController extends Controller
     public function deletePaysAction($id)
     {
         $em = $this->getDoctrine()->getManager();
+        $fs = new Filesystem();
+
+        $pays = $em->getRepository('NicolasBundle:Pays')->findOneById($id);
+        $urlFlag = $this->getParameter('flags_directory').'/'.$pays->getFlagUrl();
+
+        if($fs->exists($urlFlag)){
+            $fs->remove($urlFlag);
+        }
+
+        // TODO Supprimer les athlètes liés
+
+        $em->remove($pays);
+        $em->flush();
+
+        $session = $this->get('session');
+        $session->getFlashBag()->add('success', 'Problème lors de l\'ajout');
+
+        return $this->redirectToRoute('pays');
     }
 }

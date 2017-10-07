@@ -18,7 +18,7 @@ class PaysType extends AbstractType
     {
         $builder
             ->add('name', TextType::class ,array('label' => 'Nom du pays'))
-            ->add('flagUrl', FileType::class, array('label' => 'Drapeau'));
+            ->add('flagUrl', FileType::class, array('label' => 'Drapeau', 'data_class' => null));
     }
     
     /**
