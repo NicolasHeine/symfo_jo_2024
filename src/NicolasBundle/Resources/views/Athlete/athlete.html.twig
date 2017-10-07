@@ -51,7 +51,7 @@
                                 <td>{{ athlete.firstName }}</td>
                                 <td>{{ athlete.birthDate|date('Y-m-d') }}</td>
                                 <td>{{ athlete.discipline.name }}</td>
-                                <td>{{ athlete.pays.name }}</td>
+                                <td><img src="{{ asset('uploads/flags/' ~ athlete.pays.flagUrl) }}"></td>
                                 <td>
                                     <a href="{{ path('edit_athlete', {'id': athlete.id}) }}" class="btn btn-info">{{ 'modify.athlete'|trans }}</a>
                                     <a href="{{ path('delete_athlete', {'id': athlete.id}) }}" class="btn btn-danger">{{ 'delete.athlete'|trans }}</a>

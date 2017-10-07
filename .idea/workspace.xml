@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16292ece-91e2-482c-9ccb-ae5b8ae1ad29" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/flags/1f3a5bae73ab2654be22d88c8c5e12d7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/flags/2e23e7f27d5d767f62bf7452f9508f1e.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/flags/8ccdb9ebe27965da3f23f664843339ab.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Controller/AthleteController.php" afterPath="$PROJECT_DIR$/src/NicolasBundle/Controller/AthleteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Controller/DisciplineController.php" afterPath="$PROJECT_DIR$/src/NicolasBundle/Controller/DisciplineController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Controller/PaysController.php" afterPath="$PROJECT_DIR$/src/NicolasBundle/Controller/PaysController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Entity/Athlete.php" afterPath="$PROJECT_DIR$/src/NicolasBundle/Entity/Athlete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Entity/Pays.php" afterPath="$PROJECT_DIR$/src/NicolasBundle/Entity/Pays.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Form/AthleteType.php" afterPath="$PROJECT_DIR$/src/NicolasBundle/Form/AthleteType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Form/DisciplineType.php" afterPath="$PROJECT_DIR$/src/NicolasBundle/Form/DisciplineType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Form/PaysType.php" afterPath="$PROJECT_DIR$/src/NicolasBundle/Form/PaysType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/translations/messages.en.yml" afterPath="$PROJECT_DIR$/app/Resources/translations/messages.en.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/translations/messages.fr.yml" afterPath="$PROJECT_DIR$/app/Resources/translations/messages.fr.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Athlete/athlete.html.twig" afterPath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Athlete/athlete.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Default/home.html.twig" afterPath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Default/home.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/discipline.html.twig" afterPath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/discipline.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/edit.html.twig" afterPath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/edit.html.twig" afterPath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/pays.html.twig" afterPath="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/pays.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,22 +18,39 @@
   <component name="ComposerSettings" doNotAsk="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="messages.fr.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.fr.yml">
+      <file leaf-file-name="discipline.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/discipline.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="45" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="55" />
+            <state relative-caret-position="589">
+              <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages.en.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.en.yml">
+      <file leaf-file-name="athlete.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Athlete/athlete.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="793">
-              <caret line="89" column="51" lean-forward="false" selection-start-line="89" selection-start-column="51" selection-end-line="89" selection-end-column="51" />
+            <state relative-caret-position="555">
+              <caret line="53" column="94" lean-forward="false" selection-start-line="53" selection-start-column="94" selection-end-line="53" selection-end-column="94" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DisciplineController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Controller/DisciplineController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="42" column="85" lean-forward="false" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
+              <folding>
+                <element signature="e#44#80#0#PHP" expanded="true" />
+                <element signature="e#1440#1466#1#PHP" expanded="true" />
+                <element signature="e#1510#1557#0#PHP" expanded="true" />
+                <element signature="e#1954#1980#1#PHP" expanded="true" />
+                <element signature="e#2769#2810#0#PHP" expanded="true" />
+                <element signature="e#3144#3170#1#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,19 +86,19 @@
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Default/home.html.twig" />
         <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Athlete/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Athlete/athlete.html.twig" />
         <option value="$PROJECT_DIR$/src/NicolasBundle/Form/AthleteType.php" />
         <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/NicolasBundle/Controller/AthleteController.php" />
         <option value="$PROJECT_DIR$/src/NicolasBundle/Form/DisciplineType.php" />
-        <option value="$PROJECT_DIR$/src/NicolasBundle/Controller/DisciplineController.php" />
         <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/discipline.html.twig" />
         <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/pays.html.twig" />
         <option value="$PROJECT_DIR$/src/NicolasBundle/Form/PaysType.php" />
-        <option value="$PROJECT_DIR$/app/Resources/translations/messages.fr.yml" />
         <option value="$PROJECT_DIR$/src/NicolasBundle/Controller/PaysController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/translations/messages.fr.yml" />
         <option value="$PROJECT_DIR$/app/Resources/translations/messages.en.yml" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Controller/DisciplineController.php" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/discipline.html.twig" />
+        <option value="$PROJECT_DIR$/src/NicolasBundle/Resources/views/Athlete/athlete.html.twig" />
       </list>
     </option>
   </component>
@@ -258,6 +260,15 @@
               <item name="NicolasBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Athlete" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfo_jo_2024" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfo_jo_2024" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="NicolasBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Discipline" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -284,6 +295,12 @@
               <item name="symfo_jo_2024" type="b2602c69:ProjectViewProjectNode" />
               <item name="symfo_jo_2024" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfo_jo_2024" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfo_jo_2024" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -331,12 +348,12 @@
       <workItem from="1507039498023" duration="451000" />
       <workItem from="1507039962612" duration="286000" />
       <workItem from="1507040498637" duration="86000" />
-      <workItem from="1507386215303" duration="13986000" />
+      <workItem from="1507386215303" duration="15045000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15082000" />
+    <option name="totallyTimeSpent" value="16141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -492,14 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Entity/Discipline.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -574,20 +583,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Athlete/athlete.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Form/AthleteType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
           <caret line="25" column="81" lean-forward="false" selection-start-line="25" selection-start-column="81" selection-end-line="25" selection-end-column="81" />
           <folding>
-            <element signature="e#38#87#0#PHP" expanded="true" />
+            <element signature="e#38#87#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -631,18 +632,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/discipline.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="38" lean-forward="false" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Pays/pays.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="37" column="57" lean-forward="false" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Controller/PaysController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2006">
+          <caret line="124" column="100" lean-forward="false" selection-start-line="124" selection-start-column="100" selection-end-line="124" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.en.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.fr.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Entity/Discipline.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Controller/DisciplineController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="42" column="85" lean-forward="false" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
+            <element signature="e#1440#1466#1#PHP" expanded="true" />
+            <element signature="e#1510#1557#0#PHP" expanded="true" />
+            <element signature="e#1954#1980#1#PHP" expanded="true" />
+            <element signature="e#2769#2810#0#PHP" expanded="true" />
+            <element signature="e#3144#3170#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Discipline/discipline.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -655,41 +703,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Controller/DisciplineController.php">
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="70" column="137" lean-forward="true" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="137" />
-          <folding>
-            <element signature="e#44#80#0#PHP" expanded="true" />
-            <element signature="e#1440#1466#1#PHP" expanded="true" />
-            <element signature="e#1510#1557#0#PHP" expanded="true" />
-            <element signature="e#1954#1980#1#PHP" expanded="true" />
-            <element signature="e#2769#2810#0#PHP" expanded="true" />
-            <element signature="e#3144#3170#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Controller/PaysController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2006">
-          <caret line="124" column="100" lean-forward="false" selection-start-line="124" selection-start-column="100" selection-end-line="124" selection-end-column="100" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.fr.yml">
+    <entry file="file://$PROJECT_DIR$/src/NicolasBundle/Resources/views/Athlete/athlete.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="45" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.en.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="793">
-          <caret line="89" column="51" lean-forward="false" selection-start-line="89" selection-start-column="51" selection-end-line="89" selection-end-column="51" />
+        <state relative-caret-position="555">
+          <caret line="53" column="94" lean-forward="false" selection-start-line="53" selection-start-column="94" selection-end-line="53" selection-end-column="94" />
           <folding />
         </state>
       </provider>

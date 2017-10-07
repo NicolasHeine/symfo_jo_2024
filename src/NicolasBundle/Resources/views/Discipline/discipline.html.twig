@@ -34,6 +34,7 @@
                         <tr>
                             <th>#</th>
                             <th>{{ 'table.discipline.name'|trans }}</th>
+                            <th>{{ 'table.discipline.count'|trans }}</th>
                             <th>{{ 'table.discipline.action'|trans }}</th>
                         </tr>
                         </thead>
@@ -42,6 +43,7 @@
                             <tr>
                                 <td>{{ discipline.id }}</td>
                                 <td>{{ discipline.name }}</td>
+                                <td>{{ discipline.athletes|length }}</td>
                                 <td>
                                     <a href="{{ path('edit_discipline', {'id': discipline.id}) }}" class="btn btn-info">{{ 'modify.discipline'|trans }}</a>
                                     <a href="{{ path('delete_discipline', {'id': discipline.id}) }}" class="btn btn-danger">{{ 'delete.discipline'|trans }}</a>
